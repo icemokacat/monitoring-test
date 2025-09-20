@@ -40,9 +40,12 @@ dependencies {
     // actuator
     implementation("org.springframework.boot:spring-boot-starter-actuator")
     // monitoring
+    implementation("io.micrometer:micrometer-tracing:1.1.4")
     implementation("io.micrometer:micrometer-tracing-bridge-brave:1.1.4")
     // for report
     implementation("io.zipkin.reporter2:zipkin-reporter-brave")
+    // Slack 에러 전송용 logback appender
+    implementation("com.cyfrania:logback-slack-appender:1.2")
 
     //////////////
     // TEST

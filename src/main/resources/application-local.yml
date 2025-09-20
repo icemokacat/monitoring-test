@@ -22,3 +22,11 @@ spring:
   sql:
     init:
       mode: always
+management:
+  server:
+    port: 9292
+    address: 127.0.0.1
+  tracing:
+    enabled: true
+    sampling:
+      probability: 1.0
