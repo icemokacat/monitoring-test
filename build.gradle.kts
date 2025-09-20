@@ -1,6 +1,6 @@
 plugins {
     java
-    id("org.springframework.boot") version "3.5.5"
+    id("org.springframework.boot") version "3.2.5"
     id("io.spring.dependency-management") version "1.1.7"
 
     // Lombok
@@ -39,6 +39,10 @@ dependencies {
 
     // actuator
     implementation("org.springframework.boot:spring-boot-starter-actuator")
+    // monitoring
+    implementation("io.micrometer:micrometer-tracing-bridge-brave:1.1.4")
+    // for report
+    implementation("io.zipkin.reporter2:zipkin-reporter-brave")
 
     //////////////
     // TEST

@@ -3,9 +3,6 @@
 
     <!--<include resource="org/springframework/boot/logging/logback/defaults.xml"/>-->
 
-    <!-- 로그 출력 색상 설정 -->
-    <conversionRule conversionWord="clr" class="org.springframework.boot.logging.logback.ColorConverter"/>
-
     <!-- 콘솔 로그 출력 포맷 설정 -->
     <property name="CONSOLE_LOG_PATTERN" value="%d{yyyy.MM.dd HH:mm:ss.SSS} %magenta([%thread]) %highlight([%-3level]) %logger{5} - %msg %n" />
 
