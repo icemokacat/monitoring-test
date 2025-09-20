@@ -1,0 +1,17 @@
+
+# profiles guide
+spring:
+  profiles:
+    group:
+      locals   :
+        - global
+        - local
+      develop :
+        - global
+        - dev
+      product  :
+        - global
+        - prd
+      test :
+        - global
+        - test
